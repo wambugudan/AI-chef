@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+body{
+    background-color: #fff;
+    color:#000
+}
+
+.footer{
+    display:flex;
+    justify-content: center;
+    background-color: lightgrey;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight:600;
+}
+
+.Header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 60px;
+    margin-bottom:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Header > img{
+    width:50px;
+    margin-right: 10px;
+}
+
+/* .add-ingidient-form{
+    margin: 20px;
+} */
+
+.add-ingidient-form{
+    display:flex;
+    justify-content: center;
+    gap: 17px;
+    margin: 20px;
+}
+
+.add-ingidient-form > input{
+    border-radius: 6px;
+    border: 1px solid #d1d5d8;
+    padding: 9px 13px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.05);
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 400px;
+}
+
+.add-ingidient-form > button{
+    font-family: Inter, sans-serif;
+    border-radius: 6px;
+    border: none;
+    background-color: #141413;
+    color: #fafaf8;
+}
+
+.add-ingidient-form > button::before{
+    content: "+";
+    margin-right: 5px;
+}

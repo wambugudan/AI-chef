@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+body{
+    background-color: #282d35;
+    color:#ffffff
+}
+
+.Header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f55a5a;
+}
+
+.Header > img{
+    width: 50px;
+    margin-right: 7px;
+}
+
+.Header > span{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+article.journal-entry{
+    display:flex;
+}
+
+article.journal-entry .marker{
+    width: 10px;
+    margin-right: 4px;
+}
+
+article.journal-entry .main-image-container{
+    width: 125px;
+    height: 168px;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin: 19px;
+}
+
+.info-container{
+    margin:19px;
+}
+
+.main-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.country{
+    margin-right: 5px;
+}
+
+.info-container > a{
+    color: white;
+    font-size: 0.7rem;
+}
+
+.entry-title{
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.trip-date{
+    margin-top: 9px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.entry-text{
+    width: 500px;
+}

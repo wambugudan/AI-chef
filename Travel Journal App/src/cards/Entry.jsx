@@ -1,4 +1,12 @@
+import { useState } from "react"
+
 export default function Entry(props){
+    const [isShown, setIsShown] = useState(false)
+
+    const toggle = function(){
+        setIsShown(prevSetIsShown => !prevSetIsShown)
+    }
+
     return(
         <article className="journal-entry">
             <div className="main-image-container">
@@ -10,9 +18,10 @@ export default function Entry(props){
                 <a href={props.entry.googleMapsLink}>View on Google Maps</a>
                 <h2 className="entry-title">{props.entry.title}</h2>
                 <p className="trip-date">{props.entry.dates}</p>
-                <p className="entry-text">
+                {isShown && <p className="entry-text">
                     {props.entry.text}
-                </p>
+                </p>}
+                <button onClick={toggle}>{isShown ? "Hide" : "Show"} Description</button>
             </div>
         </article>
     )

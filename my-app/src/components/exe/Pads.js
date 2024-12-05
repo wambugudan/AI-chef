@@ -1,6 +1,4 @@
-var pads = []
-
-export default  pads =  [
+export default [
     {
         id: 1,
         color: "#F18D8B",
@@ -25,6 +23,21 @@ export default  pads =  [
         id: 5,
         color: "#63DEED",
         on: false 
+    },
+    {
+        id: 6,
+        color: "#5218FA",
+        on: true 
+    },
+    {
+        id: 7,
+        color: "#69AEED",
+        on: false 
+    },
+    {
+        id: 8,
+        color: "#BCA7E8",
+        on: true 
     }
 ] 
   
